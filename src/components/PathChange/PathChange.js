@@ -8,6 +8,7 @@ import ContactForm from "../ContactForm/ContactForm";
 
 
 function PortfolioChange() {
+
   const [key, setKey] = useState("AboutMe");
 
   const handlePageChange = (e) => {
@@ -16,18 +17,18 @@ function PortfolioChange() {
 
   const renderPath = () => {
     if (key === "Projects") {
-      return <Projects/>;
+      return <Projects />;
     }
     if (key === "ContactForm") {
-      return <ContactForm/>;
+      return <ContactForm />;
     } else {
-      return <AboutMe/>;
+      return <AboutMe />;
     }
   };
 
   return (
     <>
-        <NavBar key={key} handlePageChange={handlePageChange}/>
+        <NavBar key={key} handlePageChange={handlePageChange} />
       {renderPath()}
       <Footer />
     </>

@@ -8,7 +8,7 @@ function App() {
 <>
 <body class="background-image">
  <Container id="path">
-  <PathChange/>
+  <PathChange />
  </Container>
 </body>
 </>
