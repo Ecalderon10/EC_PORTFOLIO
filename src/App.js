@@ -1,19 +1,17 @@
 import PathChange from "./components/PathChange/PathChange";
-import './App.css';
-import Container from "react-bootstrap/Container"
-
+import "./App.css";
+import Container from "react-bootstrap/Container";
 
 function App() {
   return (
-<>
-<body class="background-image">
- <Container id="path">
-  <PathChange />
- </Container>
-</body>
-</>
-
-  )
+    <>
+      <div class="background-image">
+        <Container id="path">
+          <PathChange />
+        </Container>
+      </div>
+    </>
+  );
 }
 
 export default App;
